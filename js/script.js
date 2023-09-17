@@ -1,6 +1,7 @@
 import showMovieCards from "./MovieCards.js";
 import showMovieDisclaimer from "./MovieCardDisclaimer.js";
 
+import { SpotLightState } from './SpotLight.js'
 
 import {
    changeSpotLightBackGround,
@@ -30,9 +31,6 @@ import {
 
 
 
-const SpotLightState = {
-   tabIsActive: 0
-}
 
 
 window.addEventListener('load', () => {

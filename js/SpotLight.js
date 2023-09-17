@@ -3,6 +3,10 @@ import {
    backgroundBPmin,
 } from './constants.js'
 
+export const SpotLightState = {
+   tabIsActive: 0
+}
+
 
 const spotlightMaxSizeBG = [
    {
