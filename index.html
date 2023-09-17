@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="format-direction" content="telephone=no">
+   <title>Stream TV Hulu Project</title>
+   <link rel="stylesheet" href="css/style.css">
+   <script type="module" src="js/script.js" defer></script>
+</head>
+
+<div class="page">
+   <div class="page__wrapper">
+      <!---------------------------------------- HEADER LOGO AND MENU ------------------------------------------->
+      <div class="page__header header">
+         <div class="header__logo logo">
+            <span class="logo__span">
+               <svg class="logo__svg" viewBox="0 -2 61 24" height="24" width="61" role="img" fill="#1ce783">
+                  <title class="logo__title">hulu</title>
+                  <path class="logo__path"
+                     d="M 9.57047 6.24097 h -3.10155 c -1.0875 0 -1.63435 0.292638 -1.63435 0.292638 V 0 H 0 v 20 h 4.83456 v -8.07045 c 0 -0.713744 0.580677 -1.29171 1.29581 -1.29171 h 2.81375 c 0.716263 0 1.29525 0.577966 1.29525 1.29171 V 20 h 4.83597 v -8.69508 c 0 -3.65671 -2.44448 -5.06395 -5.50488 -5.06395 Z m 46.4801 0 v 8.06932 c 0 0.714868 -0.579268 1.29312 -1.29497 1.29312 h -2.81347 c -0.716263 0 -1.29525 -0.578248 -1.29525 -1.29312 V 6.24097 h -4.83682 V 14.7128 c 0 3.46274 2.22208 5.28716 5.50629 5.28716 h 4.73478 v -0.0247379 c 3.0246 0 4.83541 -2.14657 4.83541 -5.26242 V 6.24097 H 56.0506 Z M 28.7728 14.3103 c 0 0.714868 -0.579832 1.29312 -1.29553 1.29312 h -2.81375 c -0.716263 0 -1.29553 -0.578248 -1.29553 -1.29312 V 6.24097 h -4.83597 V 14.7128 c 0 3.46274 2.22208 5.28716 5.50601 5.28716 h 4.73478 v -0.0247379 c 3.02488 0 4.83597 -2.14657 4.83597 -5.26242 V 6.24097 h -4.83597 v 8.06932 Z M 37.2944 20 h 4.83654 V 0 H 37.2944 v 20 Z"
+                     fill-rule="evenodd">
+                  </path>
+               </svg>
+            </span>
+         </div>
+
+         <nav class="header__navigation">
+            <a href="#" class="header__btn btn btn-round">LOG IN</a>
+            <a id="mobile-menu-icon" href="#" class="header__btn-mobile btn-mobile">
+               <svg class="btn-mobile__svg" viewBox="0 0 24 24" width="1em" height="1em">
+                  <path class="btn-mobile__path"
+                     d="M3 6a1 1 0 011-1h16a1 1 0 110 2H4a1 1 0 01-1-1zm0 6a1 1 0 011-1h16a1 1 0 110 2H4a1 1 0 01-1-1zm1 5a1 1 0 100 2h16a1 1 0 100-2H4z"
+                     fill="white">
+                  </path>
+               </svg>
+            </a>
+            <ul id="mobile-menu" class="header__menu menu hidden">
+               <li class="menu__item">
+                  <a href="#" class="menu__link btn btn-round">LOG IN</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__link menu__link--dark menu__link--mx0 btn btn-round">GET ALL THREE</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+
+      <!-- ----------------------------------BACKGROUND VIDEO CONTENT AND SUBSCRIBE INFO ------------------------------------>
+      <main class="page__main">
+
+         <section class="promo">
+
+            <div class="promo__content-wrapper">
+               <div class="promo__background">
+                  <video class="promo__video"
+                     src="//cnbl-cdn.bamgrid.com/assets/7015c88884334b1844ca1a28c611a7044f785f64d9f963aef4917cdcd14d239a/original"
+                     muted loop autoplay type="video/mp4">
+                  </video>
+                  <div class="promo__video-controllers">
+                     <div id="videoPause" class="promo__video-control show">
+                        <img src="img/header/pause.svg" alt="pause video">
+                     </div>
+                     <div id="videoPlay" class="promo__video-control hidden">
+                        <img src="img/header/play.svg" alt="pause video">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="promo__bundle-info bundle-info">
+
+                  <div class="bundle-info__container">
+                     <div class="bundle-info__flex-container">
+                        <div class="bundle-info__column">
+                           <div class="bundle-info__card card">
+                              <p class="card__title">DISNEY BUNDLE DUO BASIC</p>
+                              <div class="card__img-wrapper">
+                                 <img src="img/header/first-tarif.png" alt="DISNEY BUNDLE DUO BASIC" class="card__img">
+                              </div>
+                              <p class="card__price">Both with ads, for $9.99/month.</p>
+                              <a href="#" class="card__btn btn btn-round">GET THEM BOTH</a>
+                           </div>
+                        </div>
+                        <div class="bundle-info__column">
+                           <div class="bundle-info__card card">
+                              <p class="card__title">DISNEY BUNDLE TRIO BASIC</p>
+                              <div class="card__img-wrapper">
+                                 <img src="img/header/second-tarif.png" alt="DISNEY BUNDLE TRIO BASIC"
+                                    class="card__img">
+                              </div>
+                              <p class="card__price">All with ads, for $12.99/month.</p>
+                              <a href="#" class="card__btn btn btn-round">GET ALL THREE</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="bundle-info__terms terms">
+                        <div class="terms__container">
+                           <a href="#" class="terms__link terms__link--small">Terms apply</a>
+                           <a href="#" class="terms__link terms__link--hover">Sign up for Hulu only</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </section>
+
+         <section class="movies">
+            <div class="movies__header">
+               <p class="movies__subtitle subtitle">INCLUDED IN ALL PLANS</p>
+               <h2 class="movies__title title">All The TV You Love</h2>
+               <p class="movies__text text">
+                  Watch full seasons of exclusive streaming series, current-season episodes, hit
+                  movies, Hulu Originals, kids shows, and more.</p>
+            </div>
+            <div class="movies__lib">
+               <div class="movies__grid-container">
+                  <!--                        This block is dynamically changing by JS "MovieCards" file                               -->
+               </div>
+         </section>
+         <section class="channels">
+            <div class="channels__container">
+               <p class="channels__subtitle subtitle">HULU + LIVE TV, NOW WITH DISNEY+ AND ESPN+, ALL WITH ADS</p>
+               <h2 class="channels__title title">Live TV Makes It Better</h2>
+               <p class="channels__text text">Make the switch from cable. Get 90+ top channels on Hulu (With Ads) + Live
+                  TV with your favorite live sports, news, and events - plus the entire Hulu streaming library. With
+                  Unlimited DVR, store Live TV recordings for up to nine months and fast-forward through your DVR
+                  content. Access endless entertainment with Disney+ and live sports with ESPN+. </p>
+
+               <p class="channels__disclaimer disclaimer">Regional restrictions, blackouts and Live TV terms apply.
+                  Access
+                  content from each service separately. Location data required to watch certain content. Unlimited DVR
+                  recording is not available for on-demand shows.</p>
+               <a href="" class="channels__link">VIEW CHANNELS IN YOUR AREA →</a>
+               <div class="channels__animation-container"></div>
+            </div>
+
+         </section>
+         <section id="spotlight" class="spotlight">
+            <div class="spotlight__container">
+               <div class="spotlight__box">
+                  <div class="spotlight__tabs">
+                     <button class="spotlight__btn spotlight__btn_active">LIVE SPORTS</button>
+                     <button class="spotlight__btn">BREAKING NEWS</button>
+                     <button class="spotlight__btn">BIGGEST EVENTS</button>
+                     <div class="spotlight__line"></div>
+                  </div>
+                  <div class="spotlight__content-box-1 content-box content-box_active">
+                     <h2 class="content-box__title">Live Sports</h2>
+                     <p class="content-box__text">
+                        Catch your games at home or on the go. Stream live games from major
+                        college and pro leagues including the NCAA®, NBA, NHL, NFL, and more. Includes top local and
+                        national sports networks like ABC, CBS Sports Network, ESPN, FOX, FS1, TNT, NFL Network and
+                        more.</p>
+                     <div class="content-box__logos">
+                        <div class="content-box__logo-item">
+                           <img src="./img/spotlight/logos/logos_1/cbs.png" alt="cbs_logo"
+                              class="content-box__logo-img">
+                        </div>
+                        <div class="content-box__logo-item">
+                           <img src="./img/spotlight/logos/logos_1/espn.png" alt="espn_logo"
+                              class="content-box__logo-img">
+                        </div>
+                        <div class="content-box__logo-item">
+                           <img src="./img/spotlight/logos/logos_1/fs1.svg" alt="fs1_logo"
+                              class="content-box__logo-img">
+                        </div>
+                        <div class="content-box__logo-item">
+                           <img src="./img/spotlight/logos/logos_1/nfl.png" alt="nfl_logo"
+                              class="content-box__logo-img">
+                        </div>
+                     </div>
+                     <p class="content-box__disclaimer disclaimer">
+                        Live TV plan required. Regional restrictions, blackouts and additional terms apply.
+                        <a class="content-box__disclaimer-link" href="#">See details</a>
+                     </p>
+                  </div>
+
+                  <div class="spotlight__content-box-2 content-box">
+                     <h2 class="content-box__title">Breaking News</h2>
+                     <p class="content-box__text">
+                        Keep pace with what's going on locally and globally with trusted opinions from all the top news
+                        networks.
+                     </p>
+                     <div class="content-box__logos">
+                        <div class="content-box__logo-item">
+                           <img src="./img/spotlight/logos/logos_2/abc.png" alt="abc_logo"
+                              class="content-box__logo-img">
+                        </div>
+                        <div class="content-box__logo-item">
+                           <img src="./img/spotlight/logos/logos_2/cnn.svg" alt="cnn_logo"
+                              class="content-box__logo-img">
+                        </div>
+                        <div class="content-box__logo-item">
+                           <img src="./img/spotlight/logos/logos_2/fox.svg" alt="fox_logo"
+                              class="content-box__logo-img">
+                        </div>
+                        <div class="content-box__logo-item">
+                           <img src="./img/spotlight/logos/logos_2/msnbc.png" alt="msnbc_logo"
+                              class="content-box__logo-img">
+                        </div>
+                     </div>
+                     <p class="content-box__disclaimer disclaimer">
+                        Live TV plan required. Regional restrictions, blackouts and additional terms apply.
+                        <a class="content-box__disclaimer-link" href="#">See details</a>
+                     </p>
+                  </div>
+
+                  <div class="spotlight__content-box-3 content-box">
+                     <h2 class="content-box__title">Biggest Events</h2>
+                     <p class="content-box__text">
+                        Spectacular, can't-miss moments like the Olympics, Grammys®, Oscars®, Emmys®, and more.
+                     </p>
+                     <div class="content-box__logos">
+                        <div class="content-box__logo-item">
+                           <img src="./img/spotlight/logos/logos_3/emmie.png" alt="emmie_logo"
+                              class="content-box__logo-img">
+                        </div>
+                        <div class="content-box__logo-item">
+                           <img src="./img/spotlight/logos/logos_3/golden.png" alt="golden_logo"
+                              class="content-box__logo-img">
+                        </div>
+                        <div class="content-box__logo-item">
+                           <img src="./img/spotlight/logos/logos_3/grammy.png" alt="grammy_logo"
+                              class="content-box__logo-img">
+                        </div>
+                        <div class="content-box__logo-item">
+                           <img src="./img/spotlight/logos/logos_3/oscars.png" alt="oscar_logo"
+                              class="content-box__logo-img">
+                        </div>
+                     </div>
+                     <p class="content-box__disclaimer disclaimer">
+                        Live TV plan required. Regional restrictions, blackouts and additional terms apply.
+                        <a class="content-box__disclaimer-link" href="#">See details</a>
+                     </p>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>

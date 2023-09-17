@@ -1,0 +1,82 @@
+$primary-color: rgb(28, 231, 131);
+$btn-header-color: #323843;
+$btn-secondary-header-color: rgb(11, 12, 15);
+$graphick: 'Graphick', sans-serif;
+$movie-card-border-color: #797d84;
+$disclaimer-text-color: #FFFFFF99;
+$inactive-tab-color: #FFFFFF66;
+
+
+%templateBtn {
+   display: inline-block;
+   background-color: transparent;
+   text-transform: uppercase;
+   border: none;
+   font-weight: bold;
+}
+
+a {
+   color: #FFF;
+}
+.btn {
+   display: inline-block;
+   font-family: $graphick;
+   font-weight: bold;
+   border: none;
+   outline: none;
+   text-transform: uppercase;
+   color: #FFF;
+}
+
+.btn-mobile {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   outline: none;
+   color: #FFF;
+   background-color: $btn-header-color;
+   width: 46px;
+   height: 38px;
+   border-radius: 10px;
+   position: relative;
+}
+
+
+.btn-round {
+   border-radius: 5px;
+}
+
+
+.show {
+   display: block;
+}
+
+.hidden {
+   display: none;
+}
+
+
+.subtitle {
+   color: $primary-color;
+   text-transform: uppercase;
+   font-size: 14px;
+   font-weight: bold;
+}
+
+.title {
+   font-size: 48px;
+   font-weight: bold;
+   text-transform: capitalize;
+}
+
+.text {
+   font-size: 18px;
+   line-height: 1.32;
+}
+
+.disclaimer {
+   font-size: 10px;
+   color: $disclaimer-text-color;
+   line-height: 1.46;
+}
