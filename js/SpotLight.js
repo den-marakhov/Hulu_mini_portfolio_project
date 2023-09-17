@@ -11,15 +11,15 @@ export const SpotLightState = {
 const spotlightMaxSizeBG = [
    {
       id: 1,
-      src: 'linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url(.../img/spotlight/max-size/maxsize_1.jpg);'
+      src: 'linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url(img/spotlight/max-size/maxsize_1.jpg);'
    },
    {
       id: 2,
-      src: 'linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url(.../img/spotlight/max-size/maxsize_2.jpg);'
+      src: 'linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url(img/spotlight/max-size/maxsize_2.jpg);'
    },
    {
       id: 3,
-      src: 'linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url(.../img/spotlight/max-size/maxsize_3.jpg);'
+      src: 'linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url(img/spotlight/max-size/maxsize_3.jpg);'
    },
 
 ]
@@ -27,15 +27,15 @@ const spotlightMaxSizeBG = [
 const spotlightMinSizeBG = [
    {
       id: 1,
-      src: 'linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url(.../img/spotlight/min-size/minsize_1.jpg);'
+      src: 'linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url(img/spotlight/min-size/minsize_1.jpg);'
    },
    {
       id: 2,
-      src: 'linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url(.../img/spotlight/min-size/minsize_2.jpg);'
+      src: 'linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url(img/spotlight/min-size/minsize_2.jpg);'
    },
    {
       id: 3,
-      src: 'linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url(.../img/spotlight/min-size/minsize_3.jpg);'
+      src: 'linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url(img/spotlight/min-size/minsize_3.jpg);'
    },
 ]
 
