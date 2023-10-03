@@ -28,7 +28,7 @@
          </div>
 
          <nav class="header__navigation">
-            <a href="#" class="header__btn btn btn-round">LOG IN</a>
+            <a href="#" class="header__btn btn">LOG IN</a>
             <a id="mobile-menu-icon" href="#" class="header__btn-mobile btn-mobile">
                <svg class="btn-mobile__svg" viewBox="0 0 24 24" width="1em" height="1em">
                   <path class="btn-mobile__path"
@@ -39,10 +39,10 @@
             </a>
             <ul id="mobile-menu" class="header__menu menu hidden">
                <li class="menu__item">
-                  <a href="#" class="menu__link btn btn-round">LOG IN</a>
+                  <a href="#" class="menu__link btn">LOG IN</a>
                </li>
                <li class="menu__item">
-                  <a href="#" class="menu__link menu__link--dark menu__link--mx0 btn btn-round">GET ALL THREE</a>
+                  <a href="#" class="menu__link menu__link--dark menu__link--mx0 btn">GET ALL THREE</a>
                </li>
             </ul>
          </nav>
@@ -55,9 +55,7 @@
 
             <div class="promo__content-wrapper">
                <div class="promo__background">
-                  <video class="promo__video"
-                     src="//cnbl-cdn.bamgrid.com/assets/7015c88884334b1844ca1a28c611a7044f785f64d9f963aef4917cdcd14d239a/original"
-                     muted loop autoplay type="video/mp4">
+                  <video class="promo__video" src="video/background.mp4" muted loop autoplay type="video/mp4">
                   </video>
                   <div class="promo__video-controllers">
                      <div id="videoPause" class="promo__video-control show">
@@ -80,7 +78,7 @@
                                  <img src="img/header/first-tarif.png" alt="DISNEY BUNDLE DUO BASIC" class="card__img">
                               </div>
                               <p class="card__price">Both with ads, for $9.99/month.</p>
-                              <a href="#" class="card__btn btn btn-round">GET THEM BOTH</a>
+                              <a href="#" class="card__btn btn">GET THEM BOTH</a>
                            </div>
                         </div>
                         <div class="bundle-info__column">
@@ -91,7 +89,7 @@
                                     class="card__img">
                               </div>
                               <p class="card__price">All with ads, for $12.99/month.</p>
-                              <a href="#" class="card__btn btn btn-round">GET ALL THREE</a>
+                              <a href="#" class="card__btn btn">GET ALL THREE</a>
                            </div>
                         </div>
                      </div>
@@ -238,6 +236,630 @@
                      </p>
                   </div>
 
+               </div>
+            </div>
+         </section>
+         <section class="plans">
+            <div class="plans__container">
+               <div class="plans__header">
+                  <h2 class="plans__title title">Select Your Plan</h2>
+                  <p class="plans__text text">
+                     No hidden fees, equipment rentals, or installation appointments.<br>
+                     <span class="text__span text__span_bold">Switch plans or cancel anytime.**</span>
+                  </p>
+               </div>
+               <div class="plans__plans-table plans-table">
+                  <div class="plans-table__header-plans">
+                     <div class="header-plans__toggle toggle col-xs-12 col-lg-5">
+                        <div class="toggle__toggle-wrapper">
+                           <div class="toggle__base">
+                              <p class="toggle__title">BASE PLANS</p>
+                              <div class="toggle__img-wrapper">
+                                 <img src="img/plans/toggle/hulu-logo.svg" alt="hulu" class="toggle__img">
+                              </div>
+                           </div>
+                           <div class="toggle__switch switch">
+                              <input id="toggle" class="switch__input" type="checkbox" />
+                              <label for="toggle" class="switch__label">
+                                 <span class="switch__slider"></span>
+                              </label>
+                           </div>
+                           <div class="toggle__bundle">
+                              <p class="toggle__title">BUNDLE / SAVE</p>
+                              <img src="img/plans/toggle/bundles-dark.svg" alt="bundle" class="toggle__img">
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="header-plans__plan-cards-base plan-cards-base col-xs-12 col-lg-7">
+                        <div class="plan-cards-base__item col-xs-6">
+                           <div class="plan-cards-base__content">
+                              <div class="plan-cards-base__badge">
+                                 <span class="plan-cards-base__popular-tag">MOST POPULAR</span>
+                              </div>
+                              <p class="plan-cards-base__text">
+                                 30 DAY FREE TRIAL
+                                 <span class="plan-cards-base__text-highlighted">Hulu (With Ads)</span>
+                              </p>
+                              <button id="base-btn-1" class="plan-cards-base__btn btn">$7.99 / month</button>
+                           </div>
+                        </div>
+                        <div class="plan-cards-base__item col-xs-6">
+                           <div class="plan-cards-base__content">
+                              <div class="plan-cards-base__badge">
+                              </div>
+                              <p class="plan-cards-base__text">
+                                 30 DAY FREE TRIAL
+                                 <span class="plan-cards-base__text-highlighted">Hulu (No Ads)</span>
+                              </p>
+                              <button id="base-btn-2" class="plan-cards-base__btn btn">$14.99 /
+                                 month*</button>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="header-plans__plan-cards-bundle plan-cards-bundle col-xs-12 col-lg-7 hidden">
+
+                        <div class="plan-cards-bundle__item col-xs-4">
+                           <div class="plan-cards-bundle__content">
+                              <div class="plan-cards-bundle__img-wrapper">
+                                 <img src="img/plans/toggle/bundles-dark.svg" alt="bundle-plan"
+                                    class="plan-cards-bundle__img">
+                              </div>
+                              <p class="plan-cards-bundle__text">
+                                 Disney Bundle Trio Basic
+                              </p>
+                              <button id="bundle-btn-1" class="plan-cards-bundle__btn btn">
+                                 $12.99 / month*
+                              </button>
+                           </div>
+                        </div>
+                        <div class="plan-cards-bundle__item col-xs-4">
+                           <div class="plan-cards-bundle__content">
+                              <div class="plan-cards-bundle__img-wrapper">
+                                 <img src="img/plans/toggle/bundles-dark.svg" alt="bundle-plan"
+                                    class="plan-cards-bundle__img">
+                              </div>
+                              <p class="plan-cards-bundle__text">
+                                 Disney Bundle Trio Premium
+                              </p>
+                              <button id="bundle-btn-2" class="plan-cards-bundle__btn btn">
+                                 $19.99 /
+                                 month*
+                              </button>
+                           </div>
+                        </div>
+                        <div class="plan-cards-bundle__item col-xs-4">
+                           <div class="plan-cards-bundle__content">
+                              <div class="plan-cards-bundle__img-wrapper">
+                                 <img src="img/plans/toggle/bundles-dark.svg" alt="bundle-plan"
+                                    class="plan-cards-bundle__img">
+                              </div>
+                              <p class="plan-cards-bundle__text">
+                                 Hulu + Live TV
+                              </p>
+                              <button id="bundle-btn-3" class="plan-cards-bundle__btn btn">
+                                 $49.99 / MO. FOR 3 MOS§
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="plans-table__features features">
+                     <div class="features__features-base features-base">
+                        <div class="features-base__container">
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Monthly price
+                                 </span>
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <span class="features__text-cell text-cell">
+                                    $7.99/mo.
+                                 </span>
+                              </div>
+                              <div class="features__separator separator">
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <span class="features__text-cell text-cell">
+                                    $14.99/mo.
+                                 </span>
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Streaming Library with tons of TV episodes and movies
+                                 </span>
+                                 <img class="features__info-image info-image" src="img/plans/toggle/Info_Icon.svg"
+                                    alt="info logo">
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator separator">
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell text-cell">
+                                    Most new episodes the day after they air
+                                 </span>
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator separator">
+
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Access to award-winning Hulu Originals
+                                 </span>
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator separator">
+
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Watch on your favorite devices, including TV, laptop, phone, or tablet
+                                 </span>
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator separator">
+
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Up to 6 user profiles
+                                 </span>
+                                 <img class="features__info-image info-image" src="img/plans/toggle/Info_Icon.svg"
+                                    alt="info logo">
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator separator">
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Watch on 2 different screens at the same time
+                                 </span>
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator separator">
+
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    No ads in streaming library
+                                 </span>
+                                 <img class="features__info-image info-image" src="img/plans/toggle/Info_Icon.svg"
+                                    alt="info logo">
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <span class="features__text-cell">—</span>
+                              </div>
+                              <div class="features__separator separator">
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell text-cell">
+                                    Download and watch
+                                 </span>
+                                 <img class="features__info-image info-image" src="img/plans/toggle/Info_Icon.svg"
+                                    alt="info logo">
+                              </div>
+                              <div class="features__checked col-xs-6">
+                                 <span class="features__text-cell">—</span>
+                              </div>
+                              <div class="features__separator separator"></div>
+                              <div class="features__checked col-xs-6">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="features__disclaimer-wrapper col-xs-12">
+                           <span class="features__disclaimer disclaimer">†For current-season shows in the streaming
+                              library only</span>
+                           <span class="features__disclaimer disclaimer">**Switches from Live TV to Hulu take effect as
+                              of the next billing cycle</span>
+                           <span class="features__disclaimer disclaimer">*Price will increase to $17.99/month on
+                              10/12/2023.</span>
+                        </div>
+                     </div>
+
+                     <div class="features__features-bundle features-bundle hidden">
+                        <div class="features-bundle__container">
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Monthly price. Save up to $15.98/mo.*
+                                 </span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell features__text-cell_crossed">
+                                    $25.97/mo.
+                                 </span>
+                                 <span class="features__text-cell">
+                                    $12.99/mo.*
+                                 </span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell features__text-cell_crossed">
+                                    $35.97/mo.
+                                 </span>
+                                 <span class="features__text-cell">
+                                    $19.99/mo.*
+                                 </span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell text-cell">
+                                    $49.99/mo. for 3 mos., then regular monthly price‡§
+                                 </span>
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Subscriptions included in each plan
+                                 </span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell">
+                                    Disney+, Hulu, and ESPN+, all with ads
+                                 </span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell">
+                                    Disney+ (No Ads), Hulu (No Ads), ESPN+ (With Ads)
+                                 </span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell text-cell">
+                                    Hulu + Live TV, Disney+, and ESPN+, all with ads
+                                 </span>
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Hulu Streaming library with tons of episodes and movies
+                                 </span>
+                                 <img class="features__info-image info-image" src="img/plans/toggle/Info_Icon.svg"
+                                    alt="info logo">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Endless entertainment with Disney+
+                                 </span>
+                                 <img class="features__info-image info-image" src="img/plans/toggle/Info_Icon.svg"
+                                    alt="info logo">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Live sports with ESPN+, now in the Hulu app
+                                 </span>
+                                 <img class="features__info-image info-image" src="img/plans/toggle/Info_Icon.svg"
+                                    alt="info logo">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Most new episodes on Hulu the day after they air
+                                 </span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Access to award-winning Hulu Originals
+                                 </span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Watch on your favorite devices, including TV, laptop, phone, or tablet
+                                 </span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Download and watch on Hulu
+                                 </span>
+                                 <img class="features__info-image info-image" src="img/plans/toggle/Info_Icon.svg"
+                                    alt="info logo">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell">—</span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell">—</span>
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Live TV on Hulu with 90+ top channels. No cable required.
+                                 </span>
+                                 <img class="features__info-image info-image" src="img/plans/toggle/Info_Icon.svg"
+                                    alt="info logo">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell">—</span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell">—</span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Live TV guide to navigate channels
+                                 </span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell">—</span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell">—</span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                           <div class="features__row">
+                              <div class="features__title col-xs-6 col-lg-5">
+                                 <span class="features__text-cell">
+                                    Record Live TV with Unlimited DVR
+                                 </span>
+                                 <img class="features__info-image info-image" src="img/plans/toggle/Info_Icon.svg"
+                                    alt="info logo">
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell">—</span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <span class="features__text-cell">—</span>
+                              </div>
+                              <div class="features__separator">
+                              </div>
+                              <div class="features__checked col-xs-4">
+                                 <img class="features__checked-img"
+                                    src="img/plans/toggle/Pricing_Checkmark_green-light.svg" alt="green check mark">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="features__disclaimer-wrapper col-xs-12">
+                           <span class="features__disclaimer disclaimer">*Savings compared to regular monthly price
+                              of each service. <a class="features__disclaimer-link">Terms apply.</a></span>
+                           <span class="features__disclaimer disclaimer">†For current-season shows in the streaming
+                              library only</span>
+                           <span class="features__disclaimer disclaimer">‡Price for Disney Bundle Trio Basic will
+                              increase to $14.99/month on 10/12/2023. Price for Disney Bundle Trio Premium will
+                              increase to $24.99/month on 10/12/2023. Price for Hulu + Live TV will increase to
+                              $76.99/month on 10/12/2023.</span>
+                           <span class="features__disclaimer disclaimer">§Auto-renews at $76.99/month at the
+                              expiration of 3-month promotional period (if applicable).</span>
+                        </div>
+                     </div>
+
+
+                  </div>
                </div>
             </div>
          </section>

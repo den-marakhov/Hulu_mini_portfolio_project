@@ -1,6 +1,6 @@
 import {
-   line, spotlightSection, backgroundBP,
-   backgroundBPmin,
+   line, spotlightSection,
+   lg, md,
 } from './constants.js'
 
 export const SpotLightState = {
@@ -41,7 +41,7 @@ const spotlightMinSizeBG = [
 
 export function changeSpotLightBackGround(SpotLightState) {
 
-   if (window.innerWidth >= backgroundBP) {
+   if (window.innerWidth >= lg) {
       spotlightSection.style.cssText = `
       background-image: ${spotlightMaxSizeBG[SpotLightState.tabIsActive].src};
       background-repeat: no-repeat;
@@ -51,7 +51,7 @@ export function changeSpotLightBackGround(SpotLightState) {
       padding: 60px 0 190px;
       height: 900px;
       `
-   } else if (window.innerWidth <= backgroundBPmin) {
+   } else if (window.innerWidth <= md) {
       spotlightSection.style.cssText = `
       background-image: ${spotlightMinSizeBG[SpotLightState.tabIsActive].src};
       background-repeat: no-repeat;

@@ -1,4 +1,4 @@
-
+@import './breakpoints';
 
 
 
@@ -6,6 +6,11 @@
 
    // .spotlight__container
 
+   margin-bottom: 80px;
+
+   @include media-breakpoint-down(md) {
+      margin-bottom: 40px;
+   }
 
    &__container {
       max-width: 980px;
@@ -140,7 +145,7 @@
 
 
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
    .spotlight {
 
       &__container {

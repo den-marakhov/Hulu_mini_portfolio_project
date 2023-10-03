@@ -1,7 +1,7 @@
 import {
    video, pause, play,
    mobileMenu,
-   mobileMenuScreenBP,
+   lg,
 } from './constants.js'
 
 
@@ -36,7 +36,7 @@ export function showMobileMenu() {
 }
 
 export function resetMenu() {
-   if (window.innerWidth >= mobileMenuScreenBP) {
+   if (window.innerWidth >= lg) {
       mobileMenu.classList.add('hidden');
    }
 }

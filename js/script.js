@@ -29,7 +29,13 @@ import {
    resetMenu
 } from './Header.js'
 
+import {
+   setMobileBaseBtn,
+   changePlanCards,
+   toggle
+} from "./Plans.js";
 
+import { changeBackgroundColor } from './Features.js'
 
 
 
@@ -39,17 +45,19 @@ window.addEventListener('load', () => {
    showMovieDisclaimer();
    changeSpotLightBackGround(SpotLightState);
    checkAndSetLineAfterResize(tabs, 'spotlight__btn_active');
-
 });
 
 pause.addEventListener('click', stopVideo);
 play.addEventListener('click', playVideo);
 menuIcon.addEventListener('click', showMobileMenu);
-window.addEventListener('resize', resetMenu);
+toggle.addEventListener('click', changePlanCards);
+
 window.addEventListener('resize', () => {
+   resetMenu();
    changeSpotLightBackGround(SpotLightState);
    checkAndSetLineAfterResize(tabs, 'spotlight__btn_active');
-
+   setMobileBaseBtn();
+   changeBackgroundColor();
 });
 
 tabs.forEach((tab, index) => {
