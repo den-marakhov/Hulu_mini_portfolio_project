@@ -1,8 +1,13 @@
 @import "nullstyle";
+@import "./flexboxgrid/flexboxgrid";
 @import "config";
 @import "header";
 @import "channels";
 @import "spotlight";
+@import "plans_header";
+@import "features";
+
+
 
 @font-face {
    font-family: 'Graphick', sans-serif;
@@ -71,7 +76,7 @@ body {
 
 .movies {
 
-   margin-bottom: 200px;
+   margin-bottom: 100px;
    // .movies__header
 
    &__header {
@@ -92,6 +97,10 @@ body {
 
    &__title {
       margin-bottom: 26px;
+
+      @include media-breakpoint-down(md) {
+         font-size: 32px;
+      }
    }
 
    // .movies__text
